@@ -2,9 +2,7 @@
 
 with open('input.txt') as myfile:
 	data = myfile.readlines()
-data = [x.replace('\n','')for x in data]
-
-data = [x.split(' ')for x in data]
+data = [x.replace('\n','').split(' ')for x in data]
 
 newdata = []
 
